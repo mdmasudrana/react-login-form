@@ -2,7 +2,7 @@ import React from 'react';
 import Login from './Component/Login'
 function App() {
   return (
-    <div className="App">
+    <div className="container mx-auto">
       <Login />
     </div>
   );

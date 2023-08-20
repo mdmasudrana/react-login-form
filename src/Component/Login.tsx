@@ -36,13 +36,14 @@ const LoginComponent: React.FC = () => {
   };
 
   return (
+    <div className='container mx-auto'>
     <div className="flex justify-center items-center w-full h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md">
+      <div className="bg-white p-8 rounded shadow-md w-96">
         {isLoggedIn ? (
           <Welcome />
         ) : (
           <>
-            <h2 className="text-2xl font-semibold mb-4">Login</h2>
+            <h2 className="text-2xl font-semibold mb-4">Login Form</h2>
             {!isFormValid && (
               <div className="text-red-600 mb-2">Please fill out both fields.</div>
             )}
@@ -73,6 +74,7 @@ const LoginComponent: React.FC = () => {
           </>
         )}
       </div>
+    </div>
     </div>
   );
 };
